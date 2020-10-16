@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script  src="loginManager.js" charset="utf-8" defer></script>
+    <script  src="servletHandler.js" charset="utf-8" defer></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+</head>
+
+<body>
+    <h1>Document manager RIA</h1>
+    <h2>Please authenticate yourself</h2><br>
+
+    <div class="center">
+        <button class="coolButton button1" onclick="alert('Example credentials:\n\na@b.it\naa\n\nc@d.it\nbb')">Help</button> <br><br>
+    </div>
+
+    <form id="logInForm" class="center">
+        Email: <input type="text" name="logInMail" required> <br><br>
+        Password: <input type="password" name="logInPassword" required> <br><br>
+
+        <input id="loginButton" type="button" class="coolButton button1" value="LogIn">
+        <input id = "showRegistrationButton" type="button" class="coolButton button1" value="Register">
+        <p id = "loginError" class="error"></p>
+    </form>
+
+    <form id = "registrationForm" class="center masked">
+        Name: <input type="text" name="name" required> <br><br>
+        Surname: <input type="text" name="surname" required> <br><br>
+        Password: <input type="password" name="password" required> <br><br>
+        Confirm Password: <input type="password" name="confirmPassword" required> <br><br>
+        Email: 	  <input type="email" name="email" required> <br><br>
+
+        <input id="registerButton" type="button" value="Register" class="coolButton button1">
+        <input id="showLogInButton" type="button" value="Back to login" class="coolButton button1">
+        <p id = "registrationError" class="error"></p>
+    </form>
+
+</body>
+
+</html>

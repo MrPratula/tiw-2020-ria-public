@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <script src="homeManager.js" charset="utf-8" defer></script>
+    <script src="servletHandler.js" charset="utf-8" defer></script>
+</head>
+<body>
+
+<div>
+    <a class="right" href="logOut">Logout</a>
+</div>
+
+<h1>Document manager</h1>
+<h2><span id="userFullName"></span> - Personal area</h2>
+<p class="center">Here you can view and modify your documents. Enjoy our service!</p>
+<div id = "idAlert" class="alertMessage"></div>
+
+<br>
+
+<div class="center" id = "foldersDiv"></div>
+<br>
+
+<img id = "trash" src="trash_can.png" alt="thrash can" width="50" height="55" class="masked">
+<div class="center" id = "filesDiv"></div>
+
+<br>
+
+<div id = "fileDiv" class="masked">
+
+    <table>
+
+        <thead>
+        <tr>
+            <th>Data Type</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td id = "tableName"></td>
+        </tr>
+        <tr>
+            <td>Extension</td>
+            <td id = "tableExtension"></td>
+        </tr>
+        <tr>
+            <td>Creation Date</td>
+            <td id = "tableDate"></td>
+        </tr>
+        <tr>
+            <td>File ID</td>
+            <td id = tableID></td>
+        </tr>
+        <tr>
+            <td>Folder ID Location</td>
+            <td id = tableLocation></td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <p><b>File Summary:</b></p>
+    <p id = fileSummary></p>
+</div>
+
+<p id = "fileMessage" class="masked"></p>
+
+</body>
+</html>
